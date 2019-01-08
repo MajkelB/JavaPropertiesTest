@@ -1,0 +1,11 @@
+Generation
+
+uwaga - trzeba startowaæ (generowaæ) piêtro wy¿ej (w folderze nadrzêdnym)
+
+mvn archetype:generate -DgroupId=mb.test -DartifactId=JavaPropertiesTest -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.3 -DinteractiveMode=false
+
+
+Security 
+Keystore
+
+keytool -genkeypair -alias MBKey -keyalg RSA -sigalg SHA256withRSA -dname CN=PolishPirates -storetype JKS -validity 3650 -keypass password -keystore mbkeystore.jks -storepass password
